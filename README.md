@@ -15,3 +15,15 @@ This project was built using these tools:
 ## Installation
 
 * The minimum required Python version is 3.7
+
+```python
+pip install --index-url https://test.pypi.org/simple --extra-index-url https://pypi.org/simple timberk-gendiff
+```
+
+[![asciicast](https://asciinema.org/a/iVjUBPBcaRCeTAzv3Mb0dQJwv.svg)](https://asciinema.org/a/iVjUBPBcaRCeTAzv3Mb0dQJwv)
+
+## Example using
+
+### Plain text
+
+[![asciicast](https://asciinema.org/a/1ugN2LV6klz6WwBGNdyH7pPfc.svg)](https://asciinema.org/a/1ugN2LV6klz6WwBGNdyH7pPfc)
