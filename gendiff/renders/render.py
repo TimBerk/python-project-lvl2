@@ -9,6 +9,6 @@ def render(file, extension):
     }
 
     if extension not in parse_map:
-        print("Incorrect format")
+        return "Incorrect format"
 
     return parse_map[extension](file)

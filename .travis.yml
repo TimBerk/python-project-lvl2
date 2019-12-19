@@ -10,4 +10,4 @@ install:
   - make configure
 
 script:
-  - make lint
+  - make check

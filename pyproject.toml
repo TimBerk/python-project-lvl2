@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "timberk_gendiff"
-version = "0.2.1"
+version = "0.2.2"
 description = ""
 authors = ["Lysak Tatiana <lysak-tatiana2501@ya.ru>"]
 packages = [
@@ -10,6 +10,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.7"
 flake8 = "^3.7"
+pytest = "^5.3"
 
 [tool.poetry.dev-dependencies]
 
