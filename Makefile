@@ -4,7 +4,7 @@ configure:
 	@poetry install
 
 test:
-	@poetry run pytest
+	@poetry run pytest --cov tests/
 
 lint:
 	@poetry run flake8
