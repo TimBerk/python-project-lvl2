@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "timberk_gendiff"
-version = "0.2.0"
+version = "0.2.1"
 description = ""
 authors = ["Lysak Tatiana <lysak-tatiana2501@ya.ru>"]
 packages = [

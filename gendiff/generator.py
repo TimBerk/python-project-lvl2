@@ -14,7 +14,7 @@ def read_file(file_input):
         return parser(content, file_extension)
 
 
-def generate_diff(first_file, sencond_file, format_file):
+def generate_diff(first_file, sencond_file, format_file=None):
     if format_file is None:
         format_file = 'plain'
 
