@@ -4,7 +4,7 @@ configure:
 	@poetry install
 
 test:
-	@poetry run pytest --cov tests/
+	@poetry run pytest --cov=gendiff tests/
 
 lint:
 	@poetry run flake8
