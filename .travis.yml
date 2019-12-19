@@ -1,6 +1,10 @@
 language: python
 python: 3.7
 
+env:
+  global:
+    - CC_TEST_REPORTER_ID=ae7989e7f7fcccfc4895c9c958e9afb76bee8fcb52e73c3dc1051c9f55592d6a
+
 install: make
 
 before_install:
