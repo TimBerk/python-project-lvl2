@@ -17,5 +17,4 @@ def render_plain(data):
         report.append(correct)
     report.append('}')
 
-    print('\n'.join(report))
-    return report
+    return '\n'.join(report)
