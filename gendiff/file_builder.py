@@ -19,32 +19,32 @@ def find_diff(key, first, second):
     if first_val is None:
         diff = {
             'type': 'added',
-            'key': key,
+            'app_key': key,
             'val': get_right_value(second_val)
         }
     elif second_val is None:
         diff = {
             'type': 'deleted',
-            'key': key,
+            'app_key': key,
             'val': get_right_value(first_val)
         }
-    elif type(first_val) is dict and type(second_val) is dict:
+    elif isinstance(first_val, dict) and isinstance(second_val, dict):
         result = builder_report(first_val, second_val)
         diff = {
             'type': 'parent',
-            'key': key,
+            'app_key': key,
             'child': result
         }
     elif first_val == second_val:
         diff = {
             'type': 'unchanged',
-            'key': key,
+            'app_key': key,
             'val': get_right_value(second_val)
         }
     elif first_val != second_val:
         diff = {
             'type': 'changed',
-            'key': key,
+            'app_key': key,
             'val': get_right_value(second_val),
             'old_val': get_right_value(first_val)
         }

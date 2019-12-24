@@ -4,7 +4,7 @@ configure:
 	@poetry install
 
 test:
-	@poetry run pytest --cov-report xml:coverage.xml --cov=gendiff tests/ 
+	@poetry run pytest -vv --cov-report xml:coverage.xml --cov=gendiff tests/ 
 
 lint:
 	@poetry run flake8
