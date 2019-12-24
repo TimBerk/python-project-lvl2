@@ -31,3 +31,7 @@ pip install --index-url https://test.pypi.org/simple --extra-index-url https://p
 ### YAML text
 
 [![asciicast](https://asciinema.org/a/HBfBlSIOM2stue8xa6yRZlCrv.svg)](https://asciinema.org/a/HBfBlSIOM2stue8xa6yRZlCrv)
+
+### Complex text
+
+[![asciicast](https://asciinema.org/a/1yPYGrjb5tHLzJi16EQbvOnsr.svg)](https://asciinema.org/a/1yPYGrjb5tHLzJi16EQbvOnsr)
