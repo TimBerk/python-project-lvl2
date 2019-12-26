@@ -24,7 +24,7 @@ pip install --index-url https://test.pypi.org/simple --extra-index-url https://p
 
 ## Example using
 
-### Plain text
+### Simple text
 
 [![asciicast](https://asciinema.org/a/1ugN2LV6klz6WwBGNdyH7pPfc.svg)](https://asciinema.org/a/1ugN2LV6klz6WwBGNdyH7pPfc)
 
@@ -35,3 +35,7 @@ pip install --index-url https://test.pypi.org/simple --extra-index-url https://p
 ### Complex text
 
 [![asciicast](https://asciinema.org/a/1yPYGrjb5tHLzJi16EQbvOnsr.svg)](https://asciinema.org/a/1yPYGrjb5tHLzJi16EQbvOnsr)
+
+### Plain text
+
+[![asciicast](https://asciinema.org/a/9xs0kcF3p2PmxHqBqT42HEqHq.svg)](https://asciinema.org/a/9xs0kcF3p2PmxHqBqT42HEqHq)
