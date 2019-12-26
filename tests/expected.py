@@ -2,7 +2,7 @@
 
 """Expected results"""
 
-PLAIN_STRING = """{
+SIMPLE_STRING = """{
     host: hexlet.io
   - proxy: 123.234.53.22
   + timeout: 20
@@ -143,3 +143,11 @@ COMPLEX_JSON = '''{
         }
     }
 }'''
+
+PLAIN_STRING = """Property 'common.setting2' was removed
+Property 'common.setting4' was added with value: 'blah blah'
+Property 'common.setting5' was added with value: 'complex value'
+Property 'common.setting6' was removed
+Property 'group1.baz' was changed. From 'bas' to 'bars'
+Property 'group2' was removed
+Property 'group3' was added with value: 'complex value'"""

@@ -4,7 +4,7 @@ import os
 
 from gendiff.parser import parser
 from gendiff.file_builder import builder_report
-from gendiff.renders.render import render
+from gendiff.formatters.render import render
 
 
 def read_file(file_input):
@@ -17,7 +17,7 @@ def read_file(file_input):
 
 def generate_diff(first_file, sencond_file, format_file=None):
     if format_file is None:
-        format_file = 'plain'
+        format_file = 'string'
 
     first, second = read_file(first_file), read_file(sencond_file)
     difference = builder_report(first, second)

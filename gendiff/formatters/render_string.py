@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 
-def render_plain(data, parent=None, deep=1):
+def render_string(data, parent=None, deep=1):
     if parent is not None:
         name = parent.get('app_key')
         report = [deep * '  ' + name + ': {']
@@ -24,7 +24,7 @@ def get_node(item, parent=None, deep=0):
     start = deep * "  "
 
     if type_item == 'parent':
-        result = render_plain(item.get('child'), item, deep=deep+1)
+        result = render_string(item.get('child'), item, deep=deep+1)
     elif type_item == 'changed':
         val = get_value(item.get('val'))
         old_val = get_value(item.get('old_val'), deep)

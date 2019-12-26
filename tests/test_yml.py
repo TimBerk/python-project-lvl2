@@ -3,14 +3,14 @@
 """Tests for yaml format"""
 
 from gendiff.generator import generate_diff
-from expected import PLAIN_STRING, YAML_STRING
+from expected import SIMPLE_STRING, YAML_STRING
 
 
 def test_plain_format():
-    expected = PLAIN_STRING
+    expected = SIMPLE_STRING
     actual = generate_diff('./tests/fixtures/yaml_before.yml',
                            './tests/fixtures/yaml_after.yml',
-                           'plain')
+                           'string')
     assert actual == expected
 
 
