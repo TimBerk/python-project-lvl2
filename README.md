@@ -8,9 +8,10 @@ Util for searching difference in the config files.
 
 This project was built using these tools:
 
-| Tools   |  Description  |
-|---------|:-------------:|
-| Poetry  | "Python dependency management and packaging made easy" |
+| Tool                                           | Description                                             |
+|------------------------------------------------|---------------------------------------------------------|
+| [poetry](https://poetry.eustace.io/)           | "Python dependency management and packaging made easy"  |
+| [Py.Test](https://pytest.org)                  | "A mature full-featured Python testing tool"            |
 
 ## Installation
 
@@ -28,9 +29,9 @@ pip install --index-url https://test.pypi.org/simple --extra-index-url https://p
 
 [![asciicast](https://asciinema.org/a/1ugN2LV6klz6WwBGNdyH7pPfc.svg)](https://asciinema.org/a/1ugN2LV6klz6WwBGNdyH7pPfc)
 
-### YAML text
+### Yaml text
 
-[![asciicast](https://asciinema.org/a/HBfBlSIOM2stue8xa6yRZlCrv.svg)](https://asciinema.org/a/HBfBlSIOM2stue8xa6yRZlCrv)
+[![asciicast](https://asciinema.org/a/hgTFABozGwLSRhwMhE2npqblZ.svg)](https://asciinema.org/a/hgTFABozGwLSRhwMhE2npqblZ)
 
 ### Complex text
 
@@ -39,3 +40,7 @@ pip install --index-url https://test.pypi.org/simple --extra-index-url https://p
 ### Plain text
 
 [![asciicast](https://asciinema.org/a/9xs0kcF3p2PmxHqBqT42HEqHq.svg)](https://asciinema.org/a/9xs0kcF3p2PmxHqBqT42HEqHq)
+
+### Json text
+
+[![asciicast](https://asciinema.org/a/COft4z2JVJKySLNOz83JPXlli.svg)](https://asciinema.org/a/COft4z2JVJKySLNOz83JPXlli)
