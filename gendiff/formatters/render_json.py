@@ -22,10 +22,10 @@ def get_node(item, parent=None, deep=0):
 
     if deep > 1:
         start_in = (deep + 1) * "    "
-        start = start_in + "    "
     else:
         start_in = deep * "    "
-        start = start_in + "    "
+
+    start = start_in + "    "
 
     type_item = item.get('type')
     name = item.get('app_key')

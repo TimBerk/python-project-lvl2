@@ -24,15 +24,15 @@ def test_usupported_formatter():
 
 def test_correct_diff_function():
     expected = COMPLEX_STRING
-    actual = generate_diff('./tests/fixtures/plain_diff_before.json',
-                           './tests/fixtures/plain_diff_after.json',
+    actual = generate_diff('./tests/fixtures/complex_diff_before.json',
+                           './tests/fixtures/complex_diff_after.json',
                            'string')
     assert actual == expected
 
 
 def test_correct_plain_function():
     expected = PLAIN_STRING
-    actual = generate_diff('./tests/fixtures/plain_diff_before.json',
-                           './tests/fixtures/plain_diff_after.json',
+    actual = generate_diff('./tests/fixtures/complex_diff_before.json',
+                           './tests/fixtures/complex_diff_after.json',
                            'plain')
     assert actual == expected
