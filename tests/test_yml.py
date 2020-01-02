@@ -3,12 +3,11 @@
 """Tests for yaml format"""
 
 from gendiff.generator import generate_diff
-from expected import SIMPLE_STRING, YAML_STRING
-from expected import COMPLEX_YAML, COMPLEX_JSON
+from read_correct_file import read_data
 
 
 def test_plain_format():
-    expected = SIMPLE_STRING
+    expected = read_data('simple.txt')
     actual = generate_diff('./tests/fixtures/yaml_before.yml',
                            './tests/fixtures/yaml_after.yml',
                            'string')
@@ -16,7 +15,7 @@ def test_plain_format():
 
 
 def test_yaml_format():
-    expected = YAML_STRING
+    expected = read_data('simple.yml', format='yml')
     actual = generate_diff('./tests/fixtures/yaml_before.yml',
                            './tests/fixtures/yaml_after.yml',
                            'yml')
@@ -32,7 +31,7 @@ def test_usupported_formatter():
 
 
 def test_correct_complex_function():
-    expected = COMPLEX_YAML
+    expected = read_data('complex.yml', format='yml')
     actual = generate_diff('./tests/fixtures/complex_diff_before.yml',
                            './tests/fixtures/complex_diff_after.yml',
                            'yml')
@@ -40,7 +39,7 @@ def test_correct_complex_function():
 
 
 def test_correct_json_function():
-    expected = COMPLEX_JSON
+    expected = read_data('complex.json', format='json')
     actual = generate_diff('./tests/fixtures/complex_diff_before.yml',
                            './tests/fixtures/complex_diff_after.yml',
                            'json')

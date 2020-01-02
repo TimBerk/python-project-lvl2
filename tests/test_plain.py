@@ -3,11 +3,11 @@
 """Tests for plain format"""
 
 from gendiff.generator import generate_diff
-from expected import SIMPLE_STRING, COMPLEX_STRING, PLAIN_STRING
+from read_correct_file import read_data
 
 
 def test_correct_function():
-    expected = SIMPLE_STRING
+    expected = read_data('simple.txt')
     actual = generate_diff('./tests/fixtures/plain_before.json',
                            './tests/fixtures/plain_after.json',
                            'string')
@@ -23,7 +23,7 @@ def test_usupported_formatter():
 
 
 def test_correct_diff_function():
-    expected = COMPLEX_STRING
+    expected = read_data('complex.txt')
     actual = generate_diff('./tests/fixtures/complex_diff_before.json',
                            './tests/fixtures/complex_diff_after.json',
                            'string')
@@ -31,7 +31,7 @@ def test_correct_diff_function():
 
 
 def test_correct_plain_function():
-    expected = PLAIN_STRING
+    expected = read_data('plain.txt')
     actual = generate_diff('./tests/fixtures/complex_diff_before.json',
                            './tests/fixtures/complex_diff_after.json',
                            'plain')
