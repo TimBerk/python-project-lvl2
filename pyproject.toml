@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "timberk_gendiff"
-version = "0.6.0"
+version = "0.6.1"
 description = ""
 authors = ["Lysak Tatiana <lysak-tatiana2501@ya.ru>"]
 packages = [
@@ -9,12 +9,12 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
-flake8 = "^3.7"
-pytest = "^5.3"
-pytest-cov = "^2.8"
 PyYAML = "^5.2"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^3.7"
+pytest = "^5.3"
+pytest-cov = "^2.8"
 
 [tool.poetry.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
